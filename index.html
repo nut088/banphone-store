@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บ้านPhone - အွန်လိုင်းမိုဘိုင်းဖုန်းဆိုင်</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .product-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .buy-button {
+            transition: background-color 0.2s ease-in-out;
+        }
+        .buy-button:hover {
+            background-color: #4f46e5; /* Deeper indigo */
+        }
+        .expert-button {
+            transition: background-color 0.2s ease-in-out;
+        }
+        .expert-button:hover {
+            background-color: #059669; /* Deeper emerald */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="#" class="text-3xl font-bold rounded-lg px-3 py-1 bg-white text-indigo-700 shadow-md">บ้านPhone</a>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-indigo-200 text-lg font-semibold">ပင်မစာမျက်နှာ</a></li>
+                    <li><a href="#products" class="hover:text-indigo-200 text-lg font-semibold">ထုတ်ကုန်များ</a></li>
+                    <li><a href="#" class="hover:text-indigo-200 text-lg font-semibold">ကျွန်ုပ်တို့အကြောင်း</a></li>
+                    <li><a href="#" class="hover:text-indigo-200 text-lg font-semibold">ဆက်သွယ်ရန်</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-indigo-500 text-white py-16 text-center shadow-inner">
+        <div class="container mx-auto">
+            <h1 class="text-5xl font-extrabold mb-4 animate-pulse">အရည်အသွေးမြင့် မိုဘိုင်းဖုန်းနှင့် တက်ဘလက်များ</h1>
+            <p class="text-xl mb-8">iPhone, iPad နှင့် အခြားအရာများအတွက် အကောင်းဆုံး ကမ်းလှမ်းချက်များကို ရှာဖွေပါ!</p>
+            <!-- Updated banner image to reflect new products -->
+            <img src="S__25460763_0.jpg" alt="iPhone 16 Pro Max နဖူးစည်းစာတန်း" class="mx-auto rounded-lg shadow-xl max-w-full h-auto">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <main id="products" class="container mx-auto p-6 flex-grow">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">အကြံပြုထားသော ထုတ်ကုန်များ</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product Card 1: iPhone 16 Pro Max (from S__25460763_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460763_0.jpg" alt="iPhone 16 Pro Max 256GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPhone 16 Pro Max</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 256GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">15,165 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2: iPad Gen11(A16) (from S__25460764_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460764_0.jpg" alt="iPad Gen11(A16) 128GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPad Gen11(A16)</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 128GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">5,015 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3: iPad Air M3 11inch (from S__25460765_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460765_0.jpg" alt="iPad Air M3 11inch 128GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPad Air M3 11inch</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 128GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">8,165 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4: iPhone 11 (from S__25460755_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460755_0.jpg" alt="iPhone 11 64GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPhone 11</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 64GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">3,475 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5: iPhone 12 (from S__25460757_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460757_0.jpg" alt="iPhone 12 64GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPhone 12</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 64GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">4,175 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 6: iPhone 13 (from S__25460758_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460758_0.jpg" alt="iPhone 13 128GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPhone 13</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 128GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">6,065 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 7: iPhone 14 (from S__25460759_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460759_0.jpg" alt="iPhone 14 128GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPhone 14</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 128GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">6,765 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 8: iPhone 15 (from S__25460760_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460760_0.jpg" alt="iPhone 15 128GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPhone 15</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 128GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">7,815 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 9: iPhone 16 (from S__25460761_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460761_0.jpg" alt="iPhone 16 128GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPhone 16</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 128GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">9,915 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 10: iPhone 16 Pro (from S__25460762_0.jpg) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <img src="S__25460762_0.jpg" alt="iPhone 16 Pro 128GB" class="w-full h-64 object-cover object-center rounded-t-xl">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">iPhone 16 Pro</h3>
+                    <p class="text-gray-600 text-lg mb-4 flex-grow">သိုလှောင်မှု 128GB</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-3xl font-bold text-indigo-700">12,365 ကျပ်</span>
+                        <button class="buy-button bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700">အခုဝယ်ပါ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ask an Expert Section -->
+        <section class="mt-16 bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">ကျွမ်းကျင်သူကို မေးပါ ✨</h2>
+            <p class="text-gray-600 text-center mb-6">ကျွန်ုပ်တို့၏ ထုတ်ကုန်များနှင့် ပတ်သက်၍ မေးစရာများ ရှိပါသလား။ ကျွန်ုပ်တို့၏ AI ကျွမ်းကျင်သူကို မေးမြန်းနိုင်ပါသည်!</p>
+            <div class="flex flex-col items-center">
+                <textarea id="expertQuestion" class="w-full max-w-2xl p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-lg resize-y" rows="4" placeholder="ဥပမာ: 'iPhone 16 Pro Max သည် ဂိမ်းကစားရန် သင့်တော်ပါသလား?' သို့မဟုတ် 'iPad Pro M4 သည် ယခင်မော်ဒယ်များနှင့် မည်သို့ ကွာခြားပါသလဲ?'"></textarea>
+                <button id="askExpertButton" class="expert-button bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-emerald-700 mt-6 flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9.228a4.5 4.5 0 110 5.656M10.25 10.25L7.75 7.75m2.5 2.5L7.75 12.75m2.5-2.5l2.5 2.5m-2.5 2.5l2.5-2.5m2.5 2.5l2.5-2.5m-2.5-2.5l2.5 2.5m2.5-2.5l2.5 2.5M15.75 15.75l-2.5 2.5m2.5-2.5l2.5-2.5m-2.5-2.5l2.5 2.5m-2.5 2.5l2.5-2.5m-2.5-2.5l2.5 2.5M12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                    ကျွမ်းကျင်သူကို မေးပါ ✨
+                </button>
+                <div id="expertResponse" class="mt-8 p-6 bg-gray-50 rounded-lg border border-gray-200 w-full max-w-3xl text-gray-800 text-lg leading-relaxed hidden">
+                    <!-- AI response will be displayed here -->
+                    <p class="text-center text-gray-500">ကျွမ်းကျင်သူ၏ အဖြေကို ဤနေရာတွင် ပြသပါမည်...</p>
+                </div>
+                <div id="loadingIndicator" class="mt-8 hidden">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+                    <p class="text-indigo-600 mt-2">အဖြေကို စဉ်းစားနေသည်...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6 mt-10 shadow-inner">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">&copy; 2025 บ้านPhone. မူပိုင်ခွင့်များ ရရှိပြီး။</p>
+            <p class="text-gray-400">ဆက်သွယ်ရန်: 080-418-1242 | Line: @104bgmwx</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-300 hover:text-white">Facebook</a>
+                <a href="#" class="text-gray-300 hover:text-white">Instagram</a>
+                <a href="#" class="text-gray-300 hover:text-white">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('askExpertButton').addEventListener('click', async () => {
+            const questionInput = document.getElementById('expertQuestion');
+            const responseDiv = document.getElementById('expertResponse');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const question = questionInput.value.trim();
+
+            if (!question) {
+                responseDiv.innerHTML = '<p class="text-red-500">ကျေးဇူးပြု၍ သင်၏မေးခွန်းကို ရိုက်ထည့်ပါ။</p>';
+                responseDiv.classList.remove('hidden');
+                return;
+            }
+
+            // Show loading indicator and hide previous response
+            loadingIndicator.classList.remove('hidden');
+            responseDiv.classList.add('hidden');
+            responseDiv.innerHTML = ''; // Clear previous response
+
+            try {
+                let chatHistory = [];
+                // Provide some context about the store and products
+                chatHistory.push({ role: "user", parts: [{ text: `သင်သည် "บ้านPhone" ဆိုင်မှ မိုဘိုင်းဖုန်းနှင့် တက်ဘလက် ကျွမ်းကျင်သူဖြစ်သည်။ ကျွန်ုပ်တို့၏ ထုတ်ကုန်များနှင့် ပတ်သက်၍ ဖောက်သည်များ၏ မေးခွန်းများကို ဖော်ရွေစွာ၊ မှန်ကန်စွာနှင့် အသုံးဝင်သော အချက်အလက်များဖြင့် ဖြေကြားပေးပါ။
+                ကျွန်ုပ်တို့တွင်ရှိသော ထုတ်ကုန်များမှာ-
+                - iPhone 16 Pro Max (ရွှေရောင်၊ အပြာရောင်၊ အနက်ရောင်၊ အဖြူရောင်) သိုလှောင်မှု 256GB, 512GB, 1TB
+                - iPad Pro M4
+                - iPhone 11 (64GB, 128GB)
+                - iPhone 12 (64GB, 128GB)
+                - iPhone 13 (128GB)
+                - iPhone 14 (128GB)
+                - iPhone 15 (128GB)
+                - iPhone 16 (128GB)
+                - iPhone 16 Pro (128GB, 256GB)
+
+                မေးခွန်း: ${question}` }] });
+
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Canvas will automatically provide the API key
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    responseDiv.innerHTML = `<p>${text}</p>`;
+                } else {
+                    responseDiv.innerHTML = '<p class="text-red-500">တောင်းပန်ပါသည်။ ယခုအချိန်တွင် အဖြေပေးနိုင်ခြင်း မရှိပါ။ ကျေးဇူးပြု၍ ထပ်မံကြိုးစားပါ။</p>';
+                }
+            } catch (error) {
+                console.error('Error calling Gemini API:', error);
+                responseDiv.innerHTML = '<p class="text-red-500">ချိတ်ဆက်မှု ပြဿနာ ဖြစ်ပေါ်ခဲ့ပါသည်။ ကျေးဇူးပြု၍ ထပ်မံကြိုးစားပါ။</p>';
+            } finally {
+                loadingIndicator.classList.add('hidden');
+                responseDiv.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
